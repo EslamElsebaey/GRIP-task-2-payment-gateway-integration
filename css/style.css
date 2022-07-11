@@ -1,0 +1,163 @@
+/* font family */
+body{
+    font-family: 'Edu QLD Beginner', cursive;
+}
+
+
+/* navbar section */
+
+.navbar {
+    z-index: 999;
+    background-color: #498ACB;
+    padding: 0px ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .dropdown-li:hover {
+    background-color: transparent;
+  }
+  .navbar-link {
+    letter-spacing: 1.3px;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding: 0 !important;
+  }
+  .myNav-item {
+    padding: 10px 40px 10px 10px;
+  }
+  .navbar-link::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+  background-color: #fff;
+    left: 0;
+    bottom: -5px;
+    transition: width ease 0.3s;
+  }
+  .navbar-link::after {
+    border: 0;
+  }
+  @media screen and (max-width: 992px) {
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .navbar-link:hover::after {
+      width: 80%;
+    }
+  }
+  
+  /* ***************************************************************************************************************************/
+
+  /* home section */
+.home{
+    height: 100vh ; 
+    background-color: #E0ECFA;
+}
+.info h1{
+    color: #498ACB;
+    margin-bottom: 15px;
+    font-size: 45px;
+}
+.info h4 {
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+.info p{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.image-section img{
+    border-radius: 15px;
+}
+.PaymentButton--rzp-dark-standard.svelte-ekc7fv.svelte-ekc7fv{
+    padding: 10px ;
+    background-color: #498ACB ;
+    border-radius: 25px ;
+    border-color: #498ACB ;
+    font-family: 'Edu QLD Beginner', cursive;
+    
+    
+}
+.PaymentButton--rzpTheme.svelte-ekc7fv .PaymentButton-contents.svelte-ekc7fv{
+    padding: 0 ;
+}
+.PaymentButton-securedBy.svelte-ekc7fv.svelte-ekc7fv{
+    font-size: 0 ;
+}
+svg.svelte-ekc7fv.svelte-ekc7fv{
+    display: none ;
+}
+.PaymentButton-text.svelte-ekc7fv.svelte-ekc7fv{
+    font-size: 22px ;
+}
+.PaymentButton--rzpTheme.svelte-ekc7fv.svelte-ekc7fv::before{
+    width: 0 ;
+    height: 0 ;
+}
+
+@media screen and (max-width : 768px) {
+    .infooreder{
+        order: 2;
+    }
+    .imageorder{
+        order: 1;
+    }
+    .home .row{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image-section{
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .info h1{
+        font-size: 35px;
+    }
+    .info h4{
+        font-size: 21px;
+    }
+    .info p{
+        font-size: 17px;
+    }
+}
+
+/* ***************************************************************************************************************************/
+
+/* contact section */
+
+
+.contact {
+    padding: 30px 0px;
+    background-color: #498ACB;
+  }
+  .me p {
+    color: #ccc;
+    text-align: center;
+  }
+  
+  .links-nav a {
+      font-size: 20px;
+  }
+  .links-nav li , .social-nav li {
+      margin-right: 25px;
+  }
+  .social-nav a {
+      color: #fff;
+      font-size: 22px;
+  }
+  .me p , .me p a {
+      font-size: 20px;
+      color: #e8e4e4;
+  }
+  .me p i {
+      color: red;
+  }
